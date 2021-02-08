@@ -1,0 +1,23 @@
+{
+    "name": "javascript-jest-test-practice-repo",
+    "version": "1.0.0",
+    "description": "![](./img/210208_jest_logo.png)",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LeeHyungi0622/javascript-jest-test-practice-repo.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LeeHyungi0622/javascript-jest-test-practice-repo/issues"
+    },
+    "homepage": "https://github.com/LeeHyungi0622/javascript-jest-test-practice-repo#readme",
+    "devDependencies": {
+        "jest": "^26.6.3"
+    }
+}
