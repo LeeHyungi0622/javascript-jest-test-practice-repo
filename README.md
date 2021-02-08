@@ -67,3 +67,37 @@
     Time:        1.844 s
     Ran all test suites.
     ```
+
+10. 구체적인 Test의 결과 확인
+    package.json에서 test command script를 아래와 같이 수정을 해준다.
+    다음의 --coverage 옵션을 넣어주면 각 test파일별로 구체적인 test의 정보를 확인할 수 있다.
+
+    ```bash
+    "scripts": {
+        "test": "jest --coverage"
+    }
+    ```
+
+    ```bash
+    > jest --coverage
+    PASS  __test__/cloneArray.test.js
+    PASS  __test__/sum.test.js
+    PASS  __test__/subtract.test.js
+    ---------------|---------|----------|---------|---------|-------------------
+    File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+    ---------------|---------|----------|---------|---------|-------------------
+    All files      |     100 |      100 |     100 |     100 |
+    cloneArray.js  |     100 |      100 |     100 |     100 |
+    subtract.js    |     100 |      100 |     100 |     100 |
+    sum.js         |     100 |      100 |     100 |     100 |
+    ---------------|---------|----------|---------|---------|-------------------
+
+    Test Suites: 3 passed, 3 total
+    Tests:       3 passed, 3 total
+    Snapshots:   0 total
+    Time:        3.778 s
+    ```
+
+    자동생성된 coverage 폴더의 Icov-report 폴더 내부의 index.html 파일을 열어보면 아래와 같이 test 정보를 웹 페이지에서 확인할 수 있다.
+
+    ![](./img/210208_test_coverage_page.png)
